@@ -51,7 +51,7 @@
 
 <div class="contact-box">
   <strong>Deletion requests:</strong>
-  <a href="mailto:varliali@gmail.com?subject=Deep%20Diver%20Account%20Deletion%20Request">varliali@gmail.com</a>
+  <a id="contact-email-deletion" href="#">(enable JavaScript to view email)</a>
 </div>
 
 <h2>What Happens to Your Data</h2>
@@ -83,8 +83,27 @@
 <h2>Contact Us</h2>
 <p>If you have any questions about this process, contact us at:</p>
 <div class="contact-box">
-  <strong>Email:</strong> <a href="mailto:varliali@gmail.com">varliali@gmail.com</a>
+  <strong>Email:</strong> <a id="contact-email" href="#">(enable JavaScript to view email)</a>
 </div>
+<script>
+  (function () {
+    var user = "varliali";
+    var domain = "gmail.com";
+    var address = user + "@" + domain;
+
+    var deletionLink = document.getElementById("contact-email-deletion");
+    if (deletionLink) {
+      deletionLink.href = "mailto:" + address + "?subject=Deep%20Diver%20Account%20Deletion%20Request";
+      deletionLink.textContent = address;
+    }
+
+    var contactLink = document.getElementById("contact-email");
+    if (contactLink) {
+      contactLink.href = "mailto:" + address;
+      contactLink.textContent = address;
+    }
+  })();
+</script>
 
 </body>
 </html>
