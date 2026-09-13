@@ -29,7 +29,7 @@
 <body>
 
 <h1>Privacy Policy — Deep Diver</h1>
-<p class="updated">Developer: Mobylex &nbsp;·&nbsp; Last updated: August 2026</p>
+<p class="updated">Developer: Mobylex &nbsp;·&nbsp; Last updated: September 2026</p>
 
 <p>
   This Privacy Policy describes how Deep Diver ("the App", "we", "us") collects, uses, and
@@ -71,6 +71,13 @@
     <td>A device-linked identifier used for anonymous authentication.</td>
     <td>To create your account before you optionally link a Google or Apple sign-in.</td>
   </tr>
+  <tr>
+    <td>Advertising identifiers</td>
+    <td>Your device's advertising ID (Google Advertising ID / Apple IDFA) and related ad-request
+      data, collected by Google AdMob.</td>
+    <td>To show and measure the optional rewarded video ads you can choose to watch in-app (e.g.
+      to double your coins or continue after a run ends).</td>
+  </tr>
 </table>
 
 <p>We do not collect your location, contacts, photos, microphone/camera input, browsing history,
@@ -89,9 +96,15 @@
     <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a></li>
   <li><strong>Google Play Billing</strong> — processes all in-app purchases.
     <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+  <li><strong>Google AdMob</strong> (Google Mobile Ads SDK) — shows the optional rewarded video ads
+    you can choose to watch in-app. Showing an ad is always your choice; the App is fully playable
+    without watching any ads. <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">How Google uses advertising data</a></li>
 </ul>
-<p>Deep Diver does not use advertising networks, analytics/attribution SDKs, or crash-reporting
-  SDKs, and does not sell or share your data with data brokers or advertisers.</p>
+<p>Deep Diver does not use analytics/attribution SDKs or crash-reporting SDKs, and does not sell or
+  share your data with data brokers. Google AdMob may use your device's advertising identifier to
+  select, deliver, and measure ads, and to help prevent the same ad from repeating; this is
+  governed by Google's own privacy policy linked above, and you can control ad personalization
+  through your device's system settings.</p>
 
 <h2>Data Sharing</h2>
 <p>We do not share your personal data with third parties for their own marketing or advertising
@@ -122,8 +135,18 @@
 <h2>Contact Us</h2>
 <p>If you have any questions about this Privacy Policy or your data, contact us at:</p>
 <div class="contact-box">
-  <strong>Email:</strong> <a href="mailto:varliali@gmail.com">varliali@gmail.com</a>
+  <strong>Email:</strong> <a id="contact-email" href="#">(enable JavaScript to view email)</a>
 </div>
+<script>
+  (function () {
+    var user = "varliali";
+    var domain = "gmail.com";
+    var address = user + "@" + domain;
+    var link = document.getElementById("contact-email");
+    link.href = "mailto:" + address;
+    link.textContent = address;
+  })();
+</script>
 
 </body>
 </html>
