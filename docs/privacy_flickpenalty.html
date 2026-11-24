@@ -41,8 +41,8 @@
 <h2>Information We Collect</h2>
 <p>Flick Penalty has no user accounts of its own. We do not ask for your email address, real name or
   any other contact details inside the App. Story Mode and Shoot Frenzy work entirely on your device;
-  only the Online mode, the gameplay statistics described below and the services you use (ads,
-  purchases, achievements) send data off your device.</p>
+  only the game settings download, the Online mode, the gameplay statistics described below and the
+  services you use (ads, purchases, achievements) send data off your device.</p>
 
 <table>
   <tr><th>Category</th><th>What it is</th><th>Where it is kept / why</th></tr>
@@ -60,15 +60,21 @@
     <td>Stored only on your device, to remember your preferences. It is never sent to us.</td>
   </tr>
   <tr>
+    <td>Game settings download</td>
+    <td>When the App starts, it signs in anonymously to Unity Gaming Services and receives a random player
+      ID (no account, email or password), then downloads game settings such as how often ads are shown.</td>
+    <td>Unity Authentication and Unity Remote Config, so we can adjust the game without an update. Nothing
+      about you or your game is uploaded for it.</td>
+  </tr>
+  <tr>
     <td>Online mode</td>
-    <td>When you open Online, the App signs in anonymously and receives a random player ID (no account,
-      email or password). It stores the player name you choose (or a default such as "Player1234"),
+    <td>When you open Online, the App uses the same anonymous player ID. It stores the player name you choose (or a default such as "Player1234"),
       your online rating, your latest recorded kicks and dives (the direction, speed and spin of each kick
       and where you dived) and the look of your keeper.</td>
     <td>Kept on Unity Gaming Services (Unity Authentication, Cloud Save and Leaderboards) so other players
       can play against your recorded kicks and dives and so the rating table and monthly seasons work.
       Your player name, rating, rank and recorded kicks and dives are visible to other players of the App.
-      Nothing is sent if you never open Online. Do not use your real name or other personal details as
+      None of this is sent if you never open Online. Do not use your real name or other personal details as
       your player name.</td>
   </tr>
   <tr>
@@ -165,7 +171,7 @@
   <li><strong>Personalized ads and gameplay statistics</strong>: where required, you can change your
     consent at any time with Settings → Privacy.</li>
   <li><strong>Online mode</strong>: optional. You can change your player name at any time on the Online
-    page; if you never open Online, nothing is sent to Unity Gaming Services for it.</li>
+    page; if you never open Online, your name, rating and kicks are never sent to Unity Gaming Services.</li>
   <li><strong>iOS tracking</strong>: you can allow or deny tracking when asked, and change it later
     in iOS Settings → Privacy &amp; Security → Tracking.</li>
   <li><strong>Android advertising ID</strong>: you can reset or delete it in your device's Google /
